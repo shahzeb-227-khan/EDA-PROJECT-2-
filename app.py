@@ -10,6 +10,58 @@ from cleaning import (
     monthly_sales_trend
 )
 
+# ---------------- NAVBAR ----------------
+st.markdown(
+    """
+    <style>
+    .navbar {
+        background-color: #ffffff;
+        padding: 10px 25px;
+        border-bottom: 1px solid #e6e6e6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    .nav-left {
+        font-size: 18px;
+        font-weight: 600;
+        color: #222222;
+    }
+    .nav-right {
+        display: flex;
+        gap: 10px;
+    }
+    .nav-btn {
+        padding: 8px 14px;
+        border-radius: 8px;
+        border: 1px solid #e6e6e6;
+        background-color: #f7f7f7;
+        text-decoration: none;
+        color: #222222;
+        font-weight: 500;
+    }
+    .nav-btn:hover {
+        background-color: #e6f2ff;
+        border-color: #b3d7ff;
+    }
+    </style>
+
+    <div class="navbar">
+        <div class="nav-left">Made by Shahzeb Alam</div>
+        <div class="nav-right">
+            <a class="nav-btn" href="https://github.com/shahzeb-227-khan" target="_blank">GitHub</a>
+            <a class="nav-btn" href="https://www.linkedin.com/in/shahzeb-alam-759b992a4/" target="_blank">LinkedIn</a>
+            <a class="nav-btn" href="https://shahzebalam.vercel.app/" target="_blank">Portfolio</a>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
     page_title="EDA PROJECT 2 : ONLINE RETAIL DASHBOARD",
